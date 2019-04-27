@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -27,6 +28,10 @@ namespace CalculadoraFinanceira.WebApi
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "CalculadoraFinanceira Web");
             });
+
+            var option = new RewriteOptions();
+            option.AddRedirect("^$", "swagger");
+            app.UseRewriter(option);
         }
 
         private void CarregarServicosSwagger(IServiceCollection services)

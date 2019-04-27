@@ -10,6 +10,7 @@ using System.Linq;
 namespace CalculadoraFinanceira.WebApi.Generic
 {
     [Authorize("Bearer")]
+    [ApiController]
     public abstract class ControllerCalculadoraFinanceira : Controller
     {
         public readonly IMapper _mapper;

@@ -8,11 +8,11 @@ using System;
 
 namespace CalculadoraFinanceira.WebApi.Controllers
 {
-    public class HomeController : ControllerCalculadoraFinanceira
+    public class CalculosController : ControllerCalculadoraFinanceira
     {
         public readonly CalculoServices _calculoServices;
 
-        public HomeController(IMapper mapper, CalculoServices calculoServices) : base(mapper)
+        public CalculosController(IMapper mapper, CalculoServices calculoServices) : base(mapper)
         {
             _calculoServices = calculoServices;
         }
