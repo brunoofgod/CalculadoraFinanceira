@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Presentations", "0-Presentations", "{42DE1837-84E2-4B16-981D-F730C3FBC047}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Services", "1-Services", "{46053E58-85B2-4423-9454-8A8A476A36A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{B9E7E1FF-1DC2-4E60-B8BF-C02A851F0455}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{9AF5F110-17EB-4505-A7AF-073B823A8D45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.1-WebApi", "0.1-WebApi", "{124AB7B4-2E12-4266-9D05-F05B8102D9C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraFinanceira.Application", "2-Application\CalculadoraFinanceira.Application\CalculadoraFinanceira.Application.csproj", "{E92C7A8B-32FB-403A-AC32-02403F35EFCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{79FAB88F-7644-4576-9E2F-9D8B8B00D625}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-CrossCuting", "4.1-CrossCuting", "{5DEEF8E9-FA45-436C-B69A-74FC85C24743}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-Data", "4.2-Data", "{488ED004-2831-4D6D-8579-7FA5577232E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraFinanceira.CrossCutting", "4-Infra\CalculadoraFinanceiraCrossCutting\CalculadoraFinanceira.CrossCutting.csproj", "{481F8778-0400-4F43-9122-6210C5053833}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraFinanceira", "0-Presentations\0.1-WebApi\CalculadoraFinanceira.WebApi\CalculadoraFinanceira.csproj", "{CA1A4F91-0F95-47A9-9A20-DD1ABB672AF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E92C7A8B-32FB-403A-AC32-02403F35EFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E92C7A8B-32FB-403A-AC32-02403F35EFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E92C7A8B-32FB-403A-AC32-02403F35EFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E92C7A8B-32FB-403A-AC32-02403F35EFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{481F8778-0400-4F43-9122-6210C5053833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{481F8778-0400-4F43-9122-6210C5053833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{481F8778-0400-4F43-9122-6210C5053833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{481F8778-0400-4F43-9122-6210C5053833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1A4F91-0F95-47A9-9A20-DD1ABB672AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1A4F91-0F95-47A9-9A20-DD1ABB672AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1A4F91-0F95-47A9-9A20-DD1ABB672AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1A4F91-0F95-47A9-9A20-DD1ABB672AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{124AB7B4-2E12-4266-9D05-F05B8102D9C1} = {42DE1837-84E2-4B16-981D-F730C3FBC047}
+		{E92C7A8B-32FB-403A-AC32-02403F35EFCC} = {B9E7E1FF-1DC2-4E60-B8BF-C02A851F0455}
+		{5DEEF8E9-FA45-436C-B69A-74FC85C24743} = {79FAB88F-7644-4576-9E2F-9D8B8B00D625}
+		{488ED004-2831-4D6D-8579-7FA5577232E2} = {79FAB88F-7644-4576-9E2F-9D8B8B00D625}
+		{481F8778-0400-4F43-9122-6210C5053833} = {5DEEF8E9-FA45-436C-B69A-74FC85C24743}
+		{CA1A4F91-0F95-47A9-9A20-DD1ABB672AF9} = {124AB7B4-2E12-4266-9D05-F05B8102D9C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {312E7278-A041-441E-A02A-3641F05B9590}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+﻿namespace CalculadoraFinanceira.WebApi.ViewModels.Generic
+{
+    public class ValidacaoViewModel
+    {
+        public string Campo { get; set; }
+        public string Mensagem { get; set; }
+    }
+}
