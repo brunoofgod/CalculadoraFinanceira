@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CalculadoraFinanceira.Application.Dtos_Genericos;
+using CalculadoraFinanceira.Application.Generic;
 using CalculadoraFinanceira.WebApi.ViewModels.Generic;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;

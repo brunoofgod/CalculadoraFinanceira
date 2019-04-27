@@ -1,13 +1,15 @@
-﻿using CalculadoraFinanceira.Application.Dtos_Genericos;
+﻿using AutoMapper;
+using CalculadoraFinanceira.Application.Generic;
 using CalculadoraFinanceira.WebApi.ViewModels.Generic;
-using AutoMapper;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace CalculadoraFinanceira.WebApi.Generic
 {
+    [Authorize("Bearer")]
     public abstract class ControllerCalculadoraFinanceira : Controller
     {
         public readonly IMapper _mapper;

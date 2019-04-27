@@ -2,7 +2,7 @@
 using FluentValidation.Results;
 using System.Collections.Generic;
 
-namespace CalculadoraFinanceira.Application.Dtos_Genericos
+namespace CalculadoraFinanceira.Application.Generic
 {
     public abstract class BaseDto
     {

@@ -3,13 +3,11 @@ using CalculadoraFinanceira.Application.Services.Calculos;
 using CalculadoraFinanceira.Application.Services.Calculos.Dtos;
 using CalculadoraFinanceira.ViewModels.Calculos;
 using CalculadoraFinanceira.WebApi.Generic;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace CalculadoraFinanceira.WebApi.Controllers
 {
-    [Authorize("Bearer")]
     public class HomeController : ControllerCalculadoraFinanceira
     {
         public readonly CalculoServices _calculoServices;

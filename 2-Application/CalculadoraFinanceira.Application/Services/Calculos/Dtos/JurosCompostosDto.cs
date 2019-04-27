@@ -1,4 +1,4 @@
-﻿using CalculadoraFinanceira.Application.Dtos_Genericos;
+﻿using CalculadoraFinanceira.Application.Generic;
 
 namespace CalculadoraFinanceira.Application.Services.Calculos.Dtos
 {
