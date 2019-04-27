@@ -15,6 +15,7 @@ namespace CalculadoraFinanceira.Application.Services.Calculos
             _jurosCompostosValidator = jurosCompostosValidator;
         }
 
+
         public JurosCompostosDto JurosCompostos(JurosCompostosDto dto)
         {
             if (!dto.Validar(_jurosCompostosValidator).IsValid) return dto;
@@ -24,6 +25,6 @@ namespace CalculadoraFinanceira.Application.Services.Calculos
             return dto;
         }
 
-        private decimal CalularJurosCompostos(double valorInicial, int meses) => (decimal)(valorInicial * Math.Pow(Constantes.FatorDeJuros, meses));
+        public decimal CalularJurosCompostos(double valorInicial, int meses) => (decimal)(valorInicial * Math.Pow(Constantes.FatorDeJuros, meses));
     }
 }

@@ -14,7 +14,7 @@ namespace CalculadoraFinanceira.Application.Services.Calculos.Validation
             RuleFor(x => x.Meses)
                 .NotEqual(0)
                 .WithMessage("Os mêses devem ser maior que zero")
-                .GreaterThan(0)
+                .GreaterThanOrEqualTo(0)
                 .WithMessage("Os mêses devem ser não podem ser negativos");
         }
     }
